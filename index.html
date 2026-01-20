@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Melvin Ramos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #dfdfdf;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .info div {
+            flex: 1;
+            padding: 10px;
+            margin: 0 5px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .info {
+                flex-direction: column;
+            }
+
+            .profile-pic {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CV - Melvin Ramos</h1>
+    </header>
+
+    <section>
+        <div style="text-align: center;">
+            <img class="profile-pic" src="astroboy.jpg" alt="Profile Picture">
+            <br><br>
+            <a href="cv.pdf" download target="_blank">Download Full CV (PDF)</a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Personal Information</h2>
+        <div class="info">
+            <div>
+                <h3>Name</h3>
+                <p>Melvin Ramos</p>
+            </div>
+            <div>
+                <h3>Email</h3>
+                <p>estebaramosalvarez1237@gmail.com</p>
+            </div>
+            <div>
+                <h3>Phone</h3>
+                <p>(+502) 5544-6214</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div>
+            <h3><a href="https://github.com/MelRose11-R/voucher-order-automation">Voucher Order Automation</a> | <a href="https://youtu.be/DIGBhq4nsaA">Demo</a></h3>
+            <p>UiPath, REFramework, SQL, Document Understanding</p>
+            <ul>
+                <li>Designed and implemented an end-to-end RPA solution to process voucher orders received by email.</li>
+                <li>Automated email ingestion, attachment handling, and validation of incoming sales orders.</li>
+                <li>Extracted structured order data from PDF documents using OCR and UiPath Document Understanding.</li>
+                <li>Implemented conditional workflows to validate voucher types and handle alternative business paths.</li>
+                <li>Integrated SQL Server queries to check availability, reserve vouchers, and update assignment status.</li>
+                <li>Generated dynamic voucher documents (Word to PDF) and sent automated confirmation emails to clients.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3><a href="https://github.com/MelRose11-R/data-processing-automation">Data Processing and Reporting Automation</a> | <a href="DataAutomation.pdf">Demos</a></h3>
+            <p>UiPath, Excel</p>
+            <ul>
+                <li>Developed functional automations to process, consolidate, and transform structured data from Excel files.</li>
+                <li>Implemented DataTable-based logic to calculate metrics, costs, and aggregated statistics efficiently.</li>
+                <li>Automated data consolidation across multiple sources into unified reporting outputs.</li>
+                <li>Applied reusable logic patterns for loops, validations, and file system operations.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div>
+            <h3>Systems Engineering</h3>
+            <p>Universidad Mariano Gálvez | 2023 - Present</p>
+        </div>
+    </section>
+</body>
+</html>
