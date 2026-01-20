@@ -59,6 +59,26 @@
             margin-right: 20px;
         }
 
+        /* Clase para el contenedor del video */
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         @media screen and (max-width: 600px) {
             .info {
                 flex-direction: column;
@@ -105,7 +125,7 @@
     <section>
         <h2>Projects</h2>
         <div>
-            <h3><a href="https://github.com/MelRose11-R/voucher-order-automation">Voucher Order Automation</a> | <a href="https://youtu.be/DIGBhq4nsaA">Demo</a></h3>
+            <h3><a href="https://github.com/MelRose11-R/voucher-order-automation">Voucher Order Automation</a></h3>
             <p>UiPath, REFramework, SQL, Document Understanding</p>
             <ul>
                 <li>Designed and implemented an end-to-end RPA solution to process voucher orders received by email.</li>
@@ -115,7 +135,13 @@
                 <li>Integrated SQL Server queries to check availability, reserve vouchers, and update assignment status.</li>
                 <li>Generated dynamic voucher documents (Word to PDF) and sent automated confirmation emails to clients.</li>
             </ul>
+            
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/DIGBhq4nsaA" title="Voucher Automation Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
+        
+        <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
 
         <div>
             <h3><a href="https://github.com/MelRose11-R/data-processing-automation">Data Processing and Reporting Automation</a> | <a href="DataAutomation.pdf">Demos</a></h3>
