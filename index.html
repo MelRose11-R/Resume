@@ -59,14 +59,14 @@
             margin-right: 20px;
         }
 
-        /* Clase para el contenedor del video */
+        /* Estilos para videos */
         .video-container {
             position: relative;
             overflow: hidden;
             width: 100%;
             padding-top: 56.25%; /* 16:9 Aspect Ratio */
-            margin-top: 20px;
             border-radius: 8px;
+            background-color: #000; /* Fondo negro mientras carga */
         }
 
         .video-container iframe {
@@ -77,6 +77,14 @@
             right: 0;
             width: 100%;
             height: 100%;
+        }
+
+        /* Cuadrícula para múltiples videos */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
         }
 
         @media screen and (max-width: 600px) {
@@ -124,6 +132,7 @@
 
     <section>
         <h2>Projects</h2>
+        
         <div>
             <h3><a href="https://github.com/MelRose11-R/voucher-order-automation">Voucher Order Automation</a></h3>
             <p>UiPath, REFramework, SQL, Document Understanding</p>
@@ -136,15 +145,17 @@
                 <li>Generated dynamic voucher documents (Word to PDF) and sent automated confirmation emails to clients.</li>
             </ul>
             
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/DIGBhq4nsaA" title="Voucher Automation Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div style="margin-top: 20px;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/DIGBhq4nsaA" title="Voucher Automation Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
         
         <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
 
         <div>
-            <h3><a href="https://github.com/MelRose11-R/data-processing-automation">Data Processing and Reporting Automation</a> | <a href="DataAutomation.pdf">Demos</a></h3>
+            <h3><a href="https://github.com/MelRose11-R/data-processing-automation">Data Processing and Reporting Automation</a></h3>
             <p>UiPath, Excel</p>
             <ul>
                 <li>Developed functional automations to process, consolidate, and transform structured data from Excel files.</li>
@@ -152,6 +163,18 @@
                 <li>Automated data consolidation across multiple sources into unified reporting outputs.</li>
                 <li>Applied reusable logic patterns for loops, validations, and file system operations.</li>
             </ul>
+
+            <div class="video-grid">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/81-wj12C1WI?si=467qgF2uhvPRTYKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/KjQV0NfoBq4?si=8Ay3Vdxg51zpFhJG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/16CoWNaepQk?si=QnwWtlKIK-Zf7Fon" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </section>
 
